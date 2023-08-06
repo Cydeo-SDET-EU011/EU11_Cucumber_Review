@@ -24,4 +24,11 @@ public class LibraryLoginPage {
 
     @FindBy(xpath = "//div[@class='alert alert-danger']")
     public WebElement msg;
+
+    public void login(){
+        Driver.getDriver().get(ConfigurationReader.getProperty("library.url"));
+        emailInput.sendKeys(ConfigurationReader.getProperty("librarian.student.email"));
+        passwordInput.sendKeys(ConfigurationReader.getProperty("librarian.student.password"));
+        loginButton.click();
+    }
 }
