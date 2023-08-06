@@ -15,7 +15,7 @@ public class DashboardPage {
     @FindBy(tagName = "h3")
     public WebElement title;
 
-    @FindBy(id = "navbarDropdown")
+    @FindBy(xpath = "//a[@id='navbarDropdown']")
     public WebElement userIcon;
 
     @FindBy(xpath = "//li[@class='nav-item']")

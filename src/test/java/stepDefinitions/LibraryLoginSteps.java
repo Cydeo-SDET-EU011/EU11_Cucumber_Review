@@ -45,4 +45,43 @@ public class LibraryLoginSteps {
         Assert.assertEquals(expectedMsg,actualMsg);
         Driver.closeDriver();
     }
+
+    @When("I enter {string} credentials and login")
+    public void ı_enter_credentials_and_login(String role) {
+        String username = "";
+        String password = "";
+        switch (role){
+            case "student":
+                username = ConfigurationReader.getProperty("library.student.email");
+                password = ConfigurationReader.getProperty("library.student.password");
+                break;
+            case "librarian":
+                username = ConfigurationReader.getProperty("library.teacher.email");
+                password = ConfigurationReader.getProperty("library.teacher.password");
+                break;
+            default:
+                username = ConfigurationReader.getProperty("library.student.email");
+                password = ConfigurationReader.getProperty("library.student.password");
+
+        }
+        loginPage.emailInput.sendKeys(username);
+        loginPage.passwordInput.sendKeys(password);
+        loginPage.loginButton.click();
+
+    }
+    @Then("I should see {string} page")
+    public void ı_should_see_page(String role) throws InterruptedException {
+        Thread.sleep(10000);
+        String actualRole = dashboardPage.userIcon.getText();
+        switch (role){
+            case "student":
+                Assert.assertTrue( actualRole.contains("Student"));
+                break;
+
+            case "librarian":
+                Assert.assertTrue(actualRole.contains("Librarian"));
+                break;
+        }
+    }
+
 }

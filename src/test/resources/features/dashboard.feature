@@ -11,7 +11,7 @@ Feature: Dashboard Test
       | Books           |
       | Borrowing Books |
 
-  @wip
+  #@wip
   Scenario: Check ISBN number and book name match
     When choose classic from book categories
     Then ISBN number should match book name
