@@ -11,7 +11,8 @@ import org.junit.runner.*;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        dryRun = false
+        dryRun = false,
+        tags = "@wip"
 
 )
 public class Runner {

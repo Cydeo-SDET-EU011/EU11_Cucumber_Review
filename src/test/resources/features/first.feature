@@ -7,4 +7,3 @@ Feature: Learning cucumber
     Then I should see them in the console
 
 
-  Scenario: Print wrong credentials
