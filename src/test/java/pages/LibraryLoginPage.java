@@ -27,8 +27,8 @@ public class LibraryLoginPage {
 
     public void login(){
         Driver.getDriver().get(ConfigurationReader.getProperty("library.url"));
-        emailInput.sendKeys(ConfigurationReader.getProperty("librarian.student.email"));
-        passwordInput.sendKeys(ConfigurationReader.getProperty("librarian.student.password"));
+        emailInput.sendKeys(ConfigurationReader.getProperty("library.student.email"));
+        passwordInput.sendKeys(ConfigurationReader.getProperty("library.student.password"));
         loginButton.click();
     }
 }
