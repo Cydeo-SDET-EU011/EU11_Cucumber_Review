@@ -31,4 +31,12 @@ public class LibraryLoginPage {
         passwordInput.sendKeys(ConfigurationReader.getProperty("library.student.password"));
         loginButton.click();
     }
+
+    public void login(String username,String password){
+        emailInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+        loginButton.click();
+    }
+
+
 }
