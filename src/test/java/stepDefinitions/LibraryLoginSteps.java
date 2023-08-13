@@ -98,6 +98,7 @@ public class LibraryLoginSteps {
     @Then("I should not be able to log in")
     public void i_should_not_be_able_to_log_in() {
 
+        Assert.assertTrue(Driver.getDriver().getTitle().contains("Login"));
     }
 
 
