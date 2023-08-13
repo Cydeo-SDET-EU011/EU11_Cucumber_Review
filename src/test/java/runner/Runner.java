@@ -8,11 +8,13 @@ import org.junit.runner.*;
 @CucumberOptions(
         plugin = {
                 "html:target/cucumber-report.html",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
         dryRun = false,
-        tags = " @invalidLoginWithParamsSceOutLine"
+        tags = "@wip"
 
 )
 public class Runner {
