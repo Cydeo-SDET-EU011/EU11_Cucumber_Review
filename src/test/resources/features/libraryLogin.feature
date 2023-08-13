@@ -1,3 +1,4 @@
+@smoke
 Feature: Login test for library project
 
   Background:
