@@ -4,6 +4,8 @@ import io.cucumber.java.en.*;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
 import utilities.*;
 
@@ -11,6 +13,8 @@ public class LibraryLoginSteps {
 
     LibraryLoginPage loginPage = new LibraryLoginPage();
     DashboardPage dashboardPage = new DashboardPage();
+
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
 
     @Given("I am on the login page")
     public void ı_am_on_the_login_page() {
@@ -100,6 +104,8 @@ public class LibraryLoginSteps {
 
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Login"));
     }
+
+
 
 
 }

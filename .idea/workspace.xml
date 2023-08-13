@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6596d222-1d29-4024-bd5c-7894606de01a" name="Changes" comment="project is updated">
+    <list default="true" id="6596d222-1d29-4024-bd5c-7894606de01a" name="Changes" comment="Scenario outline added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LibraryLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LibraryLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LibraryLoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LibraryLoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/libraryLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/libraryLogin.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,7 @@
       <updated>1691327319254</updated>
       <workItem from="1691327320546" duration="11959000" />
       <workItem from="1691516696119" duration="3667000" />
-      <workItem from="1691876480435" duration="4949000" />
+      <workItem from="1691876480435" duration="5987000" />
     </task>
     <task id="LOCAL-00001" summary="project created">
       <option name="closed" value="true" />
@@ -146,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691927638258</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Scenario outline added">
+      <created>1691929846655</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691929846655</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Scenario outline added">
+      <created>1691930014369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691930014369</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +180,7 @@
     <MESSAGE value="runner added" />
     <MESSAGE value="login test is added." />
     <MESSAGE value="project is updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="project is updated" />
+    <MESSAGE value="Scenario outline added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scenario outline added" />
   </component>
 </project>
