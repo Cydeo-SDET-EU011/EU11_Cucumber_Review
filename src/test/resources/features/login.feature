@@ -19,9 +19,9 @@ Feature: Login test with different users
     Then User should be able to login
 
     Examples:
-      | role      | username            | password    |
-      | student   | student5@library    | libraryUser |
-      | librarian | librarian58@library | libraryUser |
+      | role      |
+      | student   |
+      | librarian |
 
 
 #  @wip
