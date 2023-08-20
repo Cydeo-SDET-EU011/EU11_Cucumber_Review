@@ -13,7 +13,7 @@ Feature: Login test with different users
     When User enter library username and password and click login
     Then User should be able to login
 
-  @wip
+  #@wip
   Scenario Outline: login with parameters
     When user enter "<role>" information
     Then User should be able to login
