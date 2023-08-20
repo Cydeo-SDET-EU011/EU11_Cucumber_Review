@@ -15,7 +15,8 @@ Feature: Login test for library project
     When I enter invalid credentials and login
     Then I should not be on the dashboard
 
-@wip
+
+  #@wip
   Scenario: login with different roles
     When I enter "student" credentials and login
     Then I should see "student" page
